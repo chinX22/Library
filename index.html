@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="libraryscript.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Library</h1>
+    <button id="newButton">Add new Book</button>
+    <div class="container">
+        <div class="book">
+            <h2 class="title">Title: Ready Player One</h2>
+            <h3 class="author">Author: Ernest Cline</h3>
+            <p class="numpages">Number of Pages: 374</p>
+            <p class="read">Have Read?: yes</p>
+            <p class="whatever">Notes: coolio book</p>
+        </div>
+        <div class="book">
+            <h2 class="title">Title: To Kill a MockingBird</h2>
+            <h3 class="author">Author: 	Harper Lee</h3>
+            <p class="numpages">Number of Pages: 281</p>
+            <p class="read">Have Read?: yes</p>
+            <p class="whatever">Notes: ms syes :/</p>
+        </div>
+        <div class="book">
+            <h2 class="title">Title: Lord of the Flies</h2>
+            <h3 class="author">Author: William Golding</h3>
+            <p class="numpages">Number of Pages: 224</p>
+            <p class="read">Have Read?: no</p>
+        </div>
+    </div>
+    <dialog>
+        <form method="dialog">
+            <p>
+                <label>
+                    Title
+                    <input type="text" name="title">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Author
+                    <input type="text" name="author">
+                </label>
+            </p>
+            <p>
+                <label>
+                    # of Pages
+                    <input type="text" name="num_pages">
+                </label>
+            </p>
+            <label>
+                Has Read?
+                <input type="checkbox" name="has_read">
+            </label>
+            <p>
+                <label>
+                    Description
+                    <input type="text" name="description">
+                </label>
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+        <button id="cancelButton">Cancel</button>
+      </dialog>
+</body>
+</html>
