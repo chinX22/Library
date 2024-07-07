@@ -26,17 +26,21 @@ const shelf = document.querySelector(".container");
 
 const myLibrary = [];
 
-function Book() {
-  this.title = title;
-  this.author = author;
-  this.num_pages = num_pages;
-  this.has_read = (has_read == "on") ? "Yes" : "No";
-  this.descript = descript;
+class Book{
+    constructor(title0, author0, num_pages0, has_read0, descript0){
+        this.title = title0;
+        this.author = author0;
+        this.num_pages = num_pages0;
+        this.has_read = (has_read0 == "on") ? "Yes" : "No";
+        this.descript = descript0;
+    }
 }
 
 function addBookToLibrary() {
-    let newBook = new Book();
+    let newBook = new Book(title, author, num_pages, has_read, descript);
     console.log(newBook);
+    myLibrary.splice(-1); //for remove last one
+    //shelf.replaceChildren(); //to clear all and start again (smarter)
     myLibrary.push(newBook);
     for (fresh of myLibrary){
         let newdiv = document.createElement("div");
